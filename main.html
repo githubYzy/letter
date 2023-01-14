@@ -32,7 +32,7 @@
   <audio id='audio' loop>
     <source src="./mp3/love.mp3" type="audio/mpeg">
   </audio>
-  <button id='status' onclick='triggerBgMusic()'>播放按钮</button>
+  <!-- <button id='status' onclick='triggerBgMusic()'>播放按钮</button> -->
   <!--信件打字机 -->
   <div id="main">
     <div id="error">亲爱哒，您的浏览器无法显示呐，麻烦请换成电脑端口的谷歌，火狐，360浏览器。么么哒！(づ￣ 3￣)づ！</div>
@@ -328,11 +328,11 @@
       if (val) {
         audio.play();
         sessionStorage.bgmusic = 'play';
-        document.getElementById('status').innerHTML = 'Music ~停 🈲';
+        // document.getElementById('status').innerHTML = 'Music ~停 🈲';
       } else {
         audio.pause();
         sessionStorage.bgmusic = 'pause';
-        document.getElementById('status').innerHTML = '音乐 ~走起 🈶';
+        // document.getElementById('status').innerHTML = '音乐 ~走起 🈶';
       }
     }
     // 一直保持滚动条是在最底部的，没有使用这套方案，因为无法确定最后的长度是多少，所以这里使用倒序用css解决
